@@ -1,0 +1,17 @@
+name: 'Process Images'
+description: 'compress images and create smaller versions'
+inputs:
+  source-directory:  # id of input
+    description: 'Directory containing images to process'
+    required: true
+    default: 'images'
+  output-directory:  # id of input
+    description: 'Directory to store processed images'
+    required: true
+    default: 'img'
+outputs:
+  stats: # id of output
+    description: 'output statistics'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
