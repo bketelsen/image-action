@@ -4,8 +4,7 @@ ADD  package.json /action/
 ADD index.js /action/
 ADD images.js /action/
 ADD entrypoint.sh /
-WORKDIR /action
-RUN npm install -g @vercel/ncc
-RUN npm install
-RUN npm run build
+RUN cd /action && npm install -g @vercel/ncc
+RUN cd /action && npm install
+RUN cd /action && npm run build
 ENTRYPOINT ["/entrypoint.sh"]
