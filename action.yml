@@ -13,5 +13,5 @@ outputs:
   stats: # id of output
     description: 'output statistics'
 runs:
-  using: 'node12'
-  main: 'dist/index.js'
+  using: 'docker'
+  image: 'Dockerfile'
