@@ -8,4 +8,4 @@ WORKDIR /action
 RUN npm install -g @vercel/ncc
 RUN npm install
 RUN npm run build
-ENTRYPOINT ["entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
