@@ -11,8 +11,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy-img": "^0.8.3",
-    "@actions/core": "^1.2.7",
-    "@actions/github": "^4.0.0"
+    "@11ty/eleventy-img": "^0.8.3"
   }
 }
